@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Rubik:wght@300;400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{ 
+    height:100vh;
+    background: rgb(43, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.box{
+    background: rgb(250, 234, 205);
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.box .box1{
+    border: 2px solid black;
+    border-radius: 10rem;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    background: black;
+}
+
+.box .box1 h1{
+    text-align: center;
+    color: wheat;
+    font-family: 'Carter One', cursive;
+}
+
+.box .box2{
+    margin-top: 2rem;
+    border: 2px solid black;
+    background: rgb(43, 43, 43);
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.box .box2 .part{
+    padding: 1rem;
+    margin: 1rem 2rem;
+    display: flex;
+    color: wheat;
+}
+
+.box .box2 .part input{
+    margin-left: .5rem;
+    padding-left: .5rem;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.box .box2 .part1 span{
+    margin-top: 1.5rem ;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.box .box2 .part-1{
+    display: none;
+}
+
+
+
+
+/* media queries */
+
+@media  only screen and (max-width: 768px) {
+    .box .box2{
+        display: block;
+    }
+
+    .box .box2 .part1{
+        display: none;
+    }
+
+    .box .box2 .part-1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+
+    .box{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .box .box1 h1{
+        font-size: 1.5rem;
+    }
+
+    .box .box2 .part{
+        display: block;
+    }
+}
+
